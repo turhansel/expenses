@@ -4,21 +4,20 @@
   align-items: center;
   padding: 0.5rem;
   margin: 1rem 0;
-
   background-color: #4b4b4b;
   .description {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     align-items: flex-end;
     flex-flow: column-reverse;
     justify-content: flex-start;
     flex: 1;
     h2 {
-      color: #fff;
       font-size: 1rem;
       flex: 1;
       margin: 0 1rem;
+      color: white;
     }
     .price {
       font-size: 1rem;
@@ -32,8 +31,8 @@
   }
 }
 
-@media (min-width: 580px) {
-  .description {
+@media (min-width: 768px) {
+  .expense-item {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
